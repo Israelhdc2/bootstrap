@@ -1,0 +1,22 @@
+.ejemplo {
+  display: flex;
+  background-image: linear-gradient(red, blue);
+  justify-content: center; }
+
+/*body{
+
+	background: $principal;
+	color: $texto;
+	border: 5px solid $secundario;
+
+}*/
+.container {
+  border: 1px solid blue; }
+
+.row {
+  border: 1px solid green; }
+
+.row > * {
+  border: 1px solid red; }
+
+/*# sourceMappingURL=estilos.css.map */

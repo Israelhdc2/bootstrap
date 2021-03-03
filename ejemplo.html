@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!--aprender a hacer un "favicon"-->
+    <link rel="shorcut icon" type="image/x-icon" href="images/favicon.ico">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!-- ARCHIVO CSS PERSONALIZADO-->
+    <link rel="stylesheet" href="css/estilos.css">    
+
+    <title>BLOG</title>
+  </head>
+  <body>
+
+    <!--SITIO WEB. Se construira utilizando la filosofia mobile-first, diseñar pensando en mobiles-->
+    <!--vamos a ver un nuevo componente de bootstrap: "car" (util)-->
+    <!--.scss estilos sin compilar-->
+    
+    <!--Barra de navegacion. se podria implementar el atributo style con la propiedad background y definir el color para el color de fondo, pero usamos la clase: bg-dark-->
+    <!--asignamos momentaneamente una altura al body en el archivo .scss, body{ height: 800px; }, cuando movemos la barra de desplazamiento hacia abajo, el menu de navegacion se queda arriba y se desaparece, eso se arregla utilizando la clase, fixed-top, en la etiqueta <nav>, <nav class="navbar navbar-dark bg-dark navbar-expand-md fixed top"> de esa manera el menu de navegacion se quede fijado; tambien esta la clase: fixed-bottom, que lo que hace es pegar el menu en la parte inferior de la pagina-->
+
+    <!--Generalmente el texto es mas pequeño en la vista mobil; cuando se diseña para mobil, en la version mobil el tamaño del texto debe ser menor que en la vista de escritorio. La etiqueta encargada de definir el tamaño general de la fuente: <html>, vamos a estilos2.scss y le damos un estilo a la etiqueta <html>, por defecto el tamaño de la fuente es 16px, aignamos un mejor tamaño menor, html{ font-size: 13px; }, la medida relativa rem su tamaño depende del valor que se le haya asignado a la propiedad font-size en la etiqueta <html>-->
+
+    <nav class="navbar navbar-dark bg-dark navbar-expand">
+        <div class="container">
+            <a href="#" class="navbar-brand">
+                <img src="images/" alt="logo" width="100" height="auto">
+            </a>
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#menu_principal" aria-controls="menu_principal" aria-expanded="false" aria-label="desplegar menu de navegacion"></button>
+            <span class="navbar-toggler-icon"></span>
+            <div class="collapse navbar-collapse" id="menu_principal">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link active">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Quien soy&iquote;</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Proyectos</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>

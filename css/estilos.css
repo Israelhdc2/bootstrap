@@ -1,0 +1,60 @@
+.ejemplo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(red), to(blue));
+  background-image: linear-gradient(red, blue);
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
+/*body{
+
+	background: $principal;
+	color: $texto;
+	border: 5px solid $secundario;
+
+}*/
+.container {
+  border: 1px solid blue; }
+
+.row {
+  border: 1px solid green; }
+
+.row > * {
+  border: 1px solid red; }
+
+html {
+  font-size: 30px; }
+
+p {
+  font-size: 1rem; }
+
+h1 {
+  font-size: 2rem;
+  border: 0.5rem solid red;
+  padding: .5rem;
+  margin: 3rem; }
+
+@media (min-width 768px) {
+  html {
+    font-size: 30px; } }
+.bg-primary {
+  background-color: #d21327 !important; }
+
+.servicios > * {
+  border: 1px solid red; }
+
+.servicios {
+  /*display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: strech*/
+  border: 1px solid green;
+  height: 150px; }
+
+p {
+  /*border: 1px solid red;*/
+  /*border-radius: 30px;*/ }
+
+/*# sourceMappingURL=estilos.css.map */
